@@ -1,1 +1,73 @@
-Hello World
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+
+    <body class="wrapper">
+        <header>
+            <article class="profile">
+                <h1>allejo</h1>
+                <p class="intro">i occasionally code neat things but usually i just stare at my code and pretend to know what i'm doing; i typically end up breaking the build. the sole purpose for having this page is because i liked the domain</p>
+            </article>
+
+            <img class="pic" src="http://1.gravatar.com/avatar/9ca695b8eb550869382b0222c289822f?size=200">
+        </header>
+
+        <section class="main">
+            <article class="links">
+                <ul>
+                    <li>
+                    <h2><a href="http://allejo.me">my portolio</a></h2>
+                        <p>my personal website where you can read my rants, see the stuff i've made, and see how awesome i am</p>
+                    </li>
+                    <li>
+                        <h2><a href="http://osrc.dfm.io/allejo">my report card</a></h2>
+                        <p>i have a report card for you to look at. i think it looks nice but could use more cowbell</p>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/allejo">my github</a></h2>
+                        <p>look at all the cool (or at least i think they're cool) stuff i've made and am currently working on</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <footer>
+        <p id="random_quote"></p>
+        </footer>
+    </body>
+
+    <script>
+        var randomQuotes = new Array(
+             "why won't my html compile?",
+             "needs more cowbell",
+             "not enough jQuery",
+             "coming soon to illegal DVD",
+             "this space for rent",
+             "modified to fit your primitive screen",
+             "now in three flavors",
+             "do a flip",
+             "tested for larvas daily",
+             "not y3k compliant",
+             "now in color",
+             "not a substitute for human interaction",
+             "hey google, suggest this",
+             "social activity",
+             "proudly made on earth",
+             "now interactive!",
+             "dancing space potatoes",
+             "no humans were hamred",
+             "have you tried turning it off and on?",
+             "blame brad",
+             "for external use only",
+             "i call this a free meal",
+             "we taught this lion to eat tofu",
+             "listen to the father",
+             "boo'ing like it's 1999",
+             "loitering permitted, but be responsible",
+             "Andrea added herself, she's awesome");
+
+        var footerQuote = document.getElementById("random_quote");
+        footerQuote.innerHTML = randomQuotes[Math.floor(Math.random() * randomQuotes.length)];
+    </script>
+</html>
